@@ -19,13 +19,13 @@ object Migration {
 }
 
 @js.native
-trait MigrationLayer extends Layer {
+trait MigrationLayer extends Class {
   def setData(newData: js.Array[Migration]): Unit = js.native
-  def hide: Unit = js.native
-  def show: Unit = js.native
-  def pause: Unit = js.native
-  def play: Unit = js.native
-  def destroy: Unit = js.native
+  def hide(): Unit                                = js.native
+  def show(): Unit                                = js.native
+  def pause(): Unit                               = js.native
+  def play(): Unit                                = js.native
+  def destroy(): Unit                             = js.native
 }
 
 @js.native
