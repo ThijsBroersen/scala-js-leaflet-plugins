@@ -64,9 +64,9 @@ object Playback extends Clock {
 
 @js.native
 trait Playback extends Clock {
-  def addData(geoJSON: js.Dynamic | Array[js.Dynamic]): Unit = js.native
-  def setData(geoJSON: js.Dynamic | Array[js.Dynamic]): Unit = js.native
-  def clearData(): Unit                                      = js.native
+  def addData(geoJSON: js.Dynamic | js.Array[js.Dynamic]): Unit = js.native
+  def setData(geoJSON: js.Dynamic | js.Array[js.Dynamic]): Unit = js.native
+  def clearData(): Unit                                         = js.native
 
 }
 @js.native

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
 trait WebGLHeatmap extends Renderer {
-  def setData(dataPoints: Array[Array[Double]]): Unit          = js.native
-  def data: Array[js.Any]                                      = js.native
+  def setData(dataPoints: js.Array[js.Array[Double]]): Unit    = js.native
+  def data: js.Array[js.Any]                                   = js.native
   def addDataPoint(lat: Double, lon: Double, value: Int): Unit = js.native
   def clear(): Unit                                            = js.native
   def multiply(n: Double): Unit                                = js.native

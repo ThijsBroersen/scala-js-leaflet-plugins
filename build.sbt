@@ -12,7 +12,7 @@ scalacOptions ++= Seq("-deprecation", "-feature", "-P:scalajs:sjsDefinedByDefaul
 
 crossScalaVersions := Seq("2.11.12", "2.12.10", "2.13.1")
 
-libraryDependencies += "nl.thijsbroersen" %%% "scala-js-leaflet" % "0.3.0"
+libraryDependencies += "nl.thijsbroersen" %%% "scala-js-leaflet" % "0.3.0+2-4455e698-SNAPSHOT"
 
 inThisBuild(List(
   homepage := Some(url("https://github.com/ThijsBroersen/scala-js-leaflet-plugins")),
